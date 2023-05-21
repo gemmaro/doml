@@ -1,0 +1,102 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-21 19:58+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.6.2\n"
+
+#: index.html%2Bhtml.body.h1:9-9
+msgid "DOML - Document Overridable Markup Language"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:10-9
+msgid ""
+"DOMLは文書用の構造的な軽量マークアップ記法の1つです。 上書き可能 "
+"(overridable) "
+"とある通り、文書毎にマークアップの定義と<em>途中での変更</em>が可能です。"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:14-9
+msgid ""
+"DOMLの文書は、冒頭の定義と本文からなります。 "
+"冒頭の定義と本文は1行の空行で区切られます。 "
+"本文は複数の定義ないしブロックからなります。 "
+"ブロックは複数のインラインからなります。 "
+"本文書の書き出しをDOMLで書くと次のようになります。"
+msgstr ""
+
+#: index.html%2Bhtml.body.pre:21-9
+msgid ""
+"(# #): 題名\n"
+"(* *): 強調\n"
+"\n"
+"(# DOML - Document Overridable Markup Language #)\n"
+"\n"
+"DOMLは文書用の構造的な軽量マークアップ記法の1つです。\n"
+"上書可能 (overridable) "
+"とある通り、文書毎にマークアップの定義と(*途中での変更*)が可能です。"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:28-9
+msgid "定義部分では、ブロックとインラインの構文を定めます。 "
+"ブロックとインラインの構文は、1行に以下の形式で定義します。"
+msgstr ""
+
+#: index.html%2Bhtml.body.pre:32-9
+msgid "<i>左タグ</i> <i>右タグ</i>: <i>分類</i>"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:33-9
+msgid ""
+"タグの記法は左右対称でなければなりません。 "
+"使える文字はASCIIの記号類のみとします。 "
+"特に一番外側の文字は左右対称な対が存在するものに限ります。 すなわち<code>( "
+")</code>、<code>{ }</code>、<code>[ ]</code>、<code>&lt; &gt;</code>です。"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:39-9
+msgid "分類はタグに与える意味を定義します。 "
+"分類の集合とその意味や解釈は処理系に依存し、本稿では規定しません。"
+msgstr ""
+
+#: index.html%2Bhtml.body.p:43-9
+msgid "定義は文書の途中で上書きすることもできます。 "
+"予め冒頭で定義のための構文を定めておきます。"
+msgstr ""
+
+#: index.html%2Bhtml.body.pre:47-9
+msgid ""
+"(``` ```): コードブロック\n"
+"[! !]: 定義\n"
+"\n"
+"(```\n"
+"print \"Hello, \"\n"
+"```)\n"
+"\n"
+"[!\n"
+"{{{ }}}: コードブロック\n"
+"!]\n"
+"\n"
+"{{{\n"
+"puts \"world!\"\n"
+"}}}"
+msgstr ""
+
+#: index.html%2Bhtml.body.h2:61-9
+msgid "変更履歴"
+msgstr ""
+
+#: index.html%2Bhtml.body.ul.dt:63-13
+msgid "0.1.0 - 2023-05-21"
+msgstr ""
+
+#: index.html%2Bhtml.body.ul.dd:64-13
+msgid "初出。"
+msgstr ""
