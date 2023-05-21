@@ -1,12 +1,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-21 20:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: DOML\n"
+"Report-Msgid-Bugs-To: gemmaro.dev@gmail.com\n"
+"POT-Creation-Date: 2023-05-21 19:58+0900\n"
+"PO-Revision-Date: 2023-05-21 20:15+0900\n"
+"Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
+"Language-Team: none\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,7 +15,7 @@ msgstr ""
 
 #: index.html%2Bhtml.body.h1:9-9
 msgid "DOML - Document Overridable Markup Language"
-msgstr ""
+msgstr "DOML - Document Overridable Markup Language"
 
 #: index.html%2Bhtml.body.p:10-9
 msgid ""
@@ -22,6 +23,8 @@ msgid ""
 "(overridable) "
 "とある通り、文書毎にマークアップの定義と<em>途中での変更</em>が可能です。"
 msgstr ""
+"DOML is one of the structural and lightweight markup language for document.\n"
+"As it has overridable in its name, you can define and <em>modify</em> markup definitions for any documents."
 
 #: index.html%2Bhtml.body.p:14-9
 msgid ""
@@ -31,6 +34,11 @@ msgid ""
 "ブロックは複数のインラインからなります。 "
 "本文書の書き出しをDOMLで書くと次のようになります。"
 msgstr ""
+"A DOML document consists of a preamble definition and content.\n"
+"Preamble definition and content are separated by a blank line.\n"
+"The content consists of multiple definitions or blocks.\n"
+"The block consists of several inlines.\n"
+"The beginning of this document in DOML is as follows."
 
 #: index.html%2Bhtml.body.pre:21-9
 msgid ""
@@ -43,15 +51,24 @@ msgid ""
 "上書可能 (overridable) "
 "とある通り、文書毎にマークアップの定義と(*途中での変更*)が可能です。"
 msgstr ""
+"(# #): title\n"
+"(* *): emphasis\n"
+"\n"
+"(# DOML - Document Overridable Markup Language #)\n"
+"\n"
+"DOML is one of the structural and lightweight markup language for document.\n"
+"As it has overridable in its name, you can define and (*modify*) markup definitions for any documents."
 
 #: index.html%2Bhtml.body.p:28-9
 msgid "定義部分では、ブロックとインラインの構文を定めます。 "
 "ブロックとインラインの構文は、1行に以下の形式で定義します。"
 msgstr ""
+"The definition section defines the block or inline syntax.\n"
+"Block or inline syntax is defined as the following format in one line."
 
 #: index.html%2Bhtml.body.pre:32-9
 msgid "<i>左タグ</i> <i>右タグ</i>: <i>分類</i>"
-msgstr ""
+msgstr "<i>left-tag</i> <i>right-tag</i>: <i>category</i>"
 
 #: index.html%2Bhtml.body.p:33-9
 msgid ""
@@ -60,16 +77,24 @@ msgid ""
 "特に一番外側の文字は左右対称な対が存在するものに限ります。 すなわち<code>( "
 ")</code>、<code>{ }</code>、<code>[ ]</code>、<code>&lt; &gt;</code>です。"
 msgstr ""
+"Tag notation must be symmetric.\n"
+"Only ASCII characters may be used.\n"
+"In particular, the outermost character must be the one that has a symmetric pair.\n"
+"That is: <code>( )</code>, <code>{ }</code>, <code>[ ]</code>, and <code>&lt; &gt;</code>."
 
 #: index.html%2Bhtml.body.p:39-9
 msgid "分類はタグに与える意味を定義します。 "
 "分類の集合とその意味や解釈は処理系に依存し、本稿では規定しません。"
 msgstr ""
+"Category defines the meaning given to tags.\n"
+"The category set and any meaning or interpretation is up to the processor and is not defined in this document."
 
 #: index.html%2Bhtml.body.p:43-9
 msgid "定義は文書の途中で上書きすることもできます。 "
 "予め冒頭で定義のための構文を定めておきます。"
 msgstr ""
+"Definition can be overridden in the middle of the document.\n"
+"You must define the syntax for the definition in the preamble."
 
 #: index.html%2Bhtml.body.pre:47-9
 msgid ""
@@ -88,15 +113,29 @@ msgid ""
 "puts \"world!\"\n"
 "}}}"
 msgstr ""
+"(``` ```): code-block\n"
+"[! !]: definitions\n"
+"\n"
+"(```\n"
+"print \"Hello, \"\n"
+"```)\n"
+"\n"
+"[!\n"
+"{{{ }}}: code-block\n"
+"!]\n"
+"\n"
+"{{{\n"
+"puts \"world!\"\n"
+"}}}"
 
 #: index.html%2Bhtml.body.h2:61-9
 msgid "変更履歴"
-msgstr ""
+msgstr "Changelog"
 
 #: index.html%2Bhtml.body.ul.dt:63-13
 msgid "0.1.0 - 2023-05-21"
-msgstr ""
+msgstr "0.1.0 - 2023-05-21"
 
 #: index.html%2Bhtml.body.ul.dd:64-13
 msgid "初出。"
-msgstr ""
+msgstr "First appearance."

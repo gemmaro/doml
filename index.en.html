@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+    <body>
+        <h1>DOML - Document Overridable Markup Language</h1>
+        <p>
+            DOML is one of the structural and lightweight markup language for document.
+As it has overridable in its name, you can define and <em>modify</em> markup definitions for any documents.
+        </p>
+        <p>
+            A DOML document consists of a preamble definition and content.
+Preamble definition and content are separated by a blank line.
+The content consists of multiple definitions or blocks.
+The block consists of several inlines.
+The beginning of this document in DOML is as follows.
+        </p>
+        <pre><code>(# #): title
+(* *): emphasis
+
+(# DOML - Document Overridable Markup Language #)
+
+DOML is one of the structural and lightweight markup language for document.
+As it has overridable in its name, you can define and (*modify*) markup definitions for any documents.</code></pre>
+        <p>
+            The definition section defines the block or inline syntax.
+Block or inline syntax is defined as the following format in one line.
+        </p>
+        <pre><code><i>left-tag</i> <i>right-tag</i>: <i>category</i></code></pre>
+        <p>
+            Tag notation must be symmetric.
+Only ASCII characters may be used.
+In particular, the outermost character must be the one that has a symmetric pair.
+That is: <code>( )</code>, <code>{ }</code>, <code>[ ]</code>, and <code>&lt; &gt;</code>.
+        </p>
+        <p>
+            Category defines the meaning given to tags.
+The category set and any meaning or interpretation is up to the processor and is not defined in this document.
+        </p>
+        <p>
+            Definition can be overridden in the middle of the document.
+You must define the syntax for the definition in the preamble.
+        </p>
+        <pre><code>(``` ```): code-block
+[! !]: definitions
+
+(```
+print "Hello, "
+```)
+
+[!
+{{{ }}}: code-block
+!]
+
+{{{
+puts "world!"
+}}}</code></pre>
+        <h2>Changelog</h2>
+        <ul>
+            <dt>0.1.0 - 2023-05-21</dt>
+            <dd>First appearance.</dd>
+        </ul>
+    </body>
+</html>
